@@ -1,0 +1,41 @@
+html,*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    height: 100%;
+    
+}
+.div-main__section{
+    width:100%;
+    background-color: #44b5be;
+    height: 7%;
+   
+    
+    
+}
+
+.nav-main__items{
+    width:100%;
+    text-align: right;
+    
+}
+
+.nav-main__item{
+    display: inline-block;
+    margin: 0 10px;
+    
+
+}
+
+.nav-main__item a{
+    text-decoration: none;
+    color:white;
+    vertical-align: middle;
+    
+
+}
+
+.nav-main__item a:hover, .nav-main__item a:active{
+    color:white;
+    font-size: 2rem;
+}
