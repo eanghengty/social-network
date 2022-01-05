@@ -4,27 +4,23 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 const Signup=()=>{
     return(
         <div className="">
-            <div className="div-main__section">
-                <nav className="nav-main">
-                    <ul className="nav-main__items">
-                        <li  className="nav-main__item">
-                            <a href="#">Sign up</a>
-                        </li>
-                       
-                        <li className="nav-main__item">
-                            <a href="#">Sign in</a>
-                        </li>
-                    </ul>
-                </nav>
-           </div>
-           <div className="div-body__section">
-               <input className="first-name__input" type="text" placeholder='first name'></input>
-               <input className="last-name__input" type="text" placeholder='last name'></input>
-               <input type="text" placeholder='email'></input>
-               <input type="password" placeholder='password'></input>
-               <input type="password" placeholder='confirmpassword'></input>
-           </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="navbar-container__header container-fluid">
+                    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="#">Sign in</a>
+                    <a class="nav-link" href="#">Sign up</a>
+                    
+      </div>
+    </div>
+  </div>
+</nav>
         </div>
+        
     )
 }
 

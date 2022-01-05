@@ -1,4 +1,4 @@
-html,*{
+/* html,*{
     box-sizing: border-box;
     margin: 0;
     padding:0;
@@ -50,7 +50,7 @@ html,*{
 }
 
 
-/* div-body */
+/* div-body 
 
 .div-body__section{
     width:45%;
@@ -58,16 +58,106 @@ html,*{
     height: 60%;
     background-color: white;
     box-shadow: 0 1px 8px rgba(0,0,0,0.25);
+    border-radius: 10px;
+    padding: 30px;
 }
 
 .first-name__input , .last-name__input{
-    width:40%;  
+    width:50%;  
     height: 10%;
-    margin: 0 10px 10px 10px;
+    
     border-radius: 10px;
     box-shadow:0 1px 6px rgba(0,0,0,0.25);
     border:1px solid white;
+    
+    margin:0px px 30px 10px;
+    
+    
+}
+.email__input, .password__input, .confirm-password__input{
+    width:100%;
+    height:10%;
+    border-radius: 10px;
+    box-shadow:0 1px 6px rgba(0,0,0,0.25);
+    border:1px solid white;
+    margin:0px 10px 30px 10px;
 }
 input{
     display: inline-block;
+}
+.input-radio__items{
+    width:50%;
+    height: 12%;
+    background-color: white;
+    padding:10px;
+    text-align: center;
+    border:3px solid grey;
+    border-radius: 10px;
+    display:inline-block
+    
+    
+}
+.input-radio__item{
+    height:10px;
+    margin:0 5px;
+    
+}
+label{
+    height: 10px;
+}
+.button__input{
+    width:40%;
+    height:10%;
+    margin:0px 10px 30px 10px;
+    
+} 
+
+
+<form>
+            <div className="div-main__section">
+                <nav className="nav-main">
+                    <ul className="nav-main__items">
+                        <li  className="nav-main__item">
+                            <a href="#">Sign up</a>
+                        </li>
+                       
+                        <li className="nav-main__item">
+                            <a href="#">Sign in</a>
+                        </li>
+                    </ul>
+                </nav>
+           </div>
+           <div className="div-body__section">
+               <input className="first-name__input" type="text" placeholder='first name'></input>
+               <input className="last-name__input" type="text" placeholder='last name'></input>
+               <input className="email__input" type="text" placeholder='email'></input>
+               <input className="password__input"type="password" placeholder='password'></input>
+               <input className="confirm-password__input" type="password" placeholder='confirm password'></input>
+                <div className="input-radio__items">
+                    
+                    <input className="input-radio__item" type="radio" value="male"></input>
+                    <label>female</label>
+                    <input className="input-radio__item" type="radio" value="female"></input>
+                    <label>male</label>
+                </div>
+                <button className='button__input btn btn-success btn-lg'>sign up</button>
+           </div>
+           </form>
+*/
+html,*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+/*bootstrap modifier*/
+.navbar-container__header{
+    background-color: #44b5be;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color:white;
+    font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color:white;
 }
