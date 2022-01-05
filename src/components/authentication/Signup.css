@@ -9,14 +9,20 @@ html,*{
     width:100%;
     background-color: #44b5be;
     height: 7%;
+    
+    box-shadow: 0 1px 8px rgba(0,0,0,0.25);
    
     
     
 }
 
+.nav-main{
+    vertical-align: middle;
+}
+
 .nav-main__items{
     width:100%;
-    text-align: right;
+    list-style: none;
     
 }
 
@@ -24,13 +30,16 @@ html,*{
     display: inline-block;
     margin: 0 10px;
     
+    
 
 }
+
+
 
 .nav-main__item a{
     text-decoration: none;
     color:white;
-    vertical-align: middle;
+    
     
 
 }
@@ -38,4 +47,27 @@ html,*{
 .nav-main__item a:hover, .nav-main__item a:active{
     color:white;
     font-size: 2rem;
+}
+
+
+/* div-body */
+
+.div-body__section{
+    width:45%;
+    margin:100px auto;
+    height: 60%;
+    background-color: white;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.25);
+}
+
+.first-name__input , .last-name__input{
+    width:40%;  
+    height: 10%;
+    margin: 0 10px 10px 10px;
+    border-radius: 10px;
+    box-shadow:0 1px 6px rgba(0,0,0,0.25);
+    border:1px solid white;
+}
+input{
+    display: inline-block;
 }
