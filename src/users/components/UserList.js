@@ -12,8 +12,9 @@ const UserList=(props)=>{
         }
 
         return(
+            //throw data li (UserItem)
             <ul>{props.items.map((user)=>{
-                return <UserItem id={user.id} image={user.image} name={user.name} postCount={user.posts}></UserItem>
+                return <UserItem key={user.id} id={user.id} image={user.image} name={user.name} postCount={user.posts}></UserItem>
             })}</ul>
         )
     
