@@ -1,11 +1,12 @@
 import React from 'react'
 import './UserItem.css'
+import '../../shared/Profile.css'
 const UserItem=(props)=>{
     return(
-        <li>
-            <div>
-                <div>
-                    <img src={props.image} alt={props.name}></img>
+        <li className='user-item'>
+            <div className="user-item__content">
+                <div className="user-item__image">
+                    <img className="profile" src={props.image} alt={props.name}></img>
                 </div>
             </div>
             <div>

@@ -5,7 +5,7 @@ const UserList=(props)=>{
 
         if(props.items.length === 0){
             return (
-                <div>
+                <div className="center">
                     <h2>no user found</h2>
                 </div>
             )

@@ -1,1 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+html{
+  font-family: 'Ubuntu Mono', monospace;
+}
+body{
+  margin:0;
+  background-color:#eef2ff;
+}
+.center{
+  text-align: center;
+}

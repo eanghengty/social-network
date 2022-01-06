@@ -1,0 +1,14 @@
+.user-item{
+    min-width:17.5rem;
+    margin:1rem;
+}
+.user-item__content{
+    padding:0;
+}
+.user-item__image{
+    width:4rem;
+    height: 4rem;
+}
+.user-item a:hover, .user-item a:active{
+    background-color:#D9D7F1;
+}
