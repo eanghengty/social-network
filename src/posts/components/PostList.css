@@ -1,0 +1,25 @@
+
+.container-div{
+    
+    margin:0 auto;
+    width:20rem;
+    height:10rem;
+    background-color: white;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    border-radius: 1rem;
+    
+}
+
+.btn-color{
+    background-color: #FFCBCB;
+    border: 1px solid #FFCBCB;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+}
+.btn-color:hover , .btn-color:active{
+    background-color: #d9d7f1;
+    border: 1px solid #d9d7f1;
+}
+.ul-content{
+    width: 40rem;
+    height:30rem;
+}

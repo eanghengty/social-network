@@ -4,6 +4,7 @@ import {BrowserRouter as Router , Route , Redirect ,Switch}  from 'react-router-
 import Users from './users/pages/Users'
 import NewPost from './posts/pages/NewPost';
 import Navbar from './shared/Navbar';
+import UserPost from './posts/pages/UserPost';
 function App() {
   return (
     
@@ -12,6 +13,9 @@ function App() {
       <Switch>
       <Route path="/" exact>
           <Users></Users>
+      </Route>
+      <Route path="/:userId/allpost" exact>
+        <UserPost></UserPost>
       </Route>
       <Route path="/addpost" exact>
           <NewPost></NewPost>

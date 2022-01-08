@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&family=Ubuntu+Mono&display=swap');
 .background-nav{
     background-color: #d9d7f1;
 }
@@ -10,5 +11,35 @@
 }
 .brand-font__weight{
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    font-family: 'Preahvihear', sans-serif;
+    text-shadow: 2px 1px 2px rgba(0,0,0,0.25);
+}
+
+
+@keyframes first-blinking{
+    0%{
+        color:#45b6bf;
+    }
+    100%{
+        color:#00d03a;
+    }
+    
+}
+.der{
+    animation: first-blinking 2s infinite;
+}
+@keyframes second-blinking{
+    0%{
+        color:#00d03a;
+        
+    }
+    100%{
+        color:#45b6bf;
+    }
+    
+
+}
+.nham{
+    animation: second-blinking 2s infinite;
 }
