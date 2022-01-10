@@ -19,13 +19,13 @@ const PostItem=(props)=>{
                 {/* <Modal coordinate={props.coordinate} address={props.address} description={props.description}></Modal> */}
                 <div className="modal" id="viewonmap">
             
-            <div className="container modal-dialog">
+            <div className="container-fluid modal-dialog">
                 <div className="modal-content">
                 <div className="modal-header">
                     <div className="modal-title">{props.address}</div>
                 </div>
                 <div className="modal-body">
-                    <Map center={props.coordinate} zoom={16}></Map>
+                    <Map center={props.coordinate} zoom={15}></Map>
                     {/* <h2>{props.coordinate}</h2> */}
                     {/* console.log({props.coordinate}) */}
                 </div>
@@ -34,6 +34,7 @@ const PostItem=(props)=>{
                 </div>
             </div>
             </div>
+
         </div>
                 <button to={`/${props.id}`} className="col-md-12 col-lg-3 col-12 btn-custom__1 btn btn-success">edit</button>
                 <button className="col-md-12 col-lg-3 col-12 btn-custom__1 btn btn-success">delete</button>

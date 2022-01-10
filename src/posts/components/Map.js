@@ -1,19 +1,18 @@
-
 import React, { useRef, useEffect } from 'react';
  
-import './Map.css'
+import './Map.css';
  
-const Map = (props) => {
-  const mapRef = useRef()
-  const {center,zoom}= props
+const Map = props => {
+  const mapRef = useRef();
   
+  const { center, zoom } = props;
  
   useEffect(() => {
     let marker = new window.ol.Feature({
         geometry: new window.ol.geom.Point(
           window.ol.proj.fromLonLat([center.lng, center.lat])
         )
-      });
+      })
    
       let markerStyle = new window.ol.style.Style({
         image: new window.ol.style.Circle({
@@ -24,7 +23,7 @@ const Map = (props) => {
             width: 5
           })
         })
-      });
+      })
    
       marker.setStyle(markerStyle);
    
@@ -32,7 +31,7 @@ const Map = (props) => {
         source: new window.ol.source.Vector({
           features: [marker]
         })
-      });
+      })
    
       new window.ol.Map({
         target: mapRef.current.id,
@@ -46,16 +45,17 @@ const Map = (props) => {
           center: window.ol.proj.fromLonLat([center.lng, center.lat]),
           zoom: zoom
         })
-      });
-    }, [center,zoom]);
+      })
+  }, [center, zoom]);
  
   return (
     <div
       ref={mapRef}
-      className={'map'}
+      className={`map`}
+      
       id="map"
     ></div>
-  )
-}
+  );
+};
  
-export default Map
+export default Map;

@@ -20,5 +20,11 @@
     border: 1px solid #d9d7f1;
 }
 .ul-content{
-    
+    width: 100%;
 }
+ @media (min-width:576px){
+     .ul-content{
+         width: 40rem;
+         height:40rem;
+     }
+ }
