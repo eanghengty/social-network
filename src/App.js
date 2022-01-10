@@ -5,6 +5,7 @@ import Users from './users/pages/Users'
 import NewPost from './posts/pages/NewPost';
 import Navbar from './shared/Navbar';
 import UserPost from './posts/pages/UserPost';
+
 function App() {
   return (
     

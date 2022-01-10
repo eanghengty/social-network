@@ -1,0 +1,52 @@
+.container-main{
+    width:60%;
+    background-color: white;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    padding:1.5rem 1rem;
+    border-radius: 20px;
+}
+.form-control-file{
+    width:70%;
+    float:right;
+
+}
+.form-group__add-post{
+    float: right;
+}
+.label-hidden{
+    visibility: hidden;
+}
+.btn-add-post{
+    background-color: #ffcbcb;
+    border: 1px solid #ffcbcb;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+}
+
+.form-control-address{
+    background-color: #e7e7e7;
+    box-shadow: inset 0 4px 4px rgba(0,0,0,0.25);
+    margin-left: 5px;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    width:100%;
+    font-size: small;
+}
+.form-group-address{
+    width:50%;
+}
+.form-control-title{
+    background-color: #e7e7e7;
+    box-shadow: inset 0 4px 4px rgba(0,0,0,0.25);
+    margin-left: 5px;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+}
+.form-control-description{
+    background-color: #e7e7e7;
+    box-shadow: inset 0 4px 4px rgba(0,0,0,0.25);
+    margin-left: 5px;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+}
+
+
