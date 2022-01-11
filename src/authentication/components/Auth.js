@@ -4,7 +4,7 @@ const Auth=()=>{
     return(
         <div className="row">
             
-            <form className="container-form__main container  mt-4 col-md-6">
+            <form className="container-form__main container  mt-4 col-md-6" onSubmit={(event)=>event.preventDefault()}>
                 <div className="container-h2">
                     <h2 className="h2-sign-in">Sign in</h2>
                 </div>

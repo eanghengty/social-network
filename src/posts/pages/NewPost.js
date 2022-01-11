@@ -2,7 +2,7 @@ import React from 'react'
 import '../components/NewPost.css'
 const NewPost=()=>{
     return(
-        <form className="container-main container mt-4 ">
+        <form className="container-main container mt-4 " onSubmit={(event)=>event.preventDefault()}>
             <div className="form-group">
                 <label for="title">Title</label>
                 <input type="text" className="form-control-title form-control form-control-lg"></input>
