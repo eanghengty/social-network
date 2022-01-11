@@ -24,7 +24,7 @@ const Navbar=()=>{
                                 <NavLink to="/addpost" className="drop-shadow__a nav-link text-white">Add Post</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/getin" className="drop-shadow__a nav-link text-white">Get In</NavLink>
+                                <NavLink to="/auth" className="drop-shadow__a nav-link text-white">Get In</NavLink>
                             </li>
                         </ul>
                     </div>

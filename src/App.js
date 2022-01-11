@@ -5,11 +5,12 @@ import Users from './users/pages/Users'
 import NewPost from './posts/pages/NewPost';
 import Navbar from './shared/Navbar';
 import UserPost from './posts/pages/UserPost';
-
+import Auth from './authentication/components/Auth';
 function App() {
   return (
     
     <Router>
+      {/* render only one time when the page start  */}
       <Navbar></Navbar>
       <Switch>
       <Route path="/" exact>
@@ -20,6 +21,9 @@ function App() {
       </Route>
       <Route path="/addpost" exact>
           <NewPost></NewPost>
+      </Route>
+      <Route path="/auth" exact>
+        <Auth></Auth>
       </Route>
       <Redirect to="/">
 

@@ -8,6 +8,7 @@ import {useParams} from 'react-router-dom'
  //
 const UserPost=()=>{
     const userId = useParams().userId
+    //logic match content with user
     const loadPost= post.filter(post=>post.creatorId === userId)
     return(
         <PostList items={loadPost}></PostList>
