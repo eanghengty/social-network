@@ -4,8 +4,11 @@ import Map from './Map'
 import './Modal.css'
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import { useContext } from 'react'
+import { authContext } from '../../util/context/authContext'
 const PostItem=(props)=>{
-   
+   const auth = useContext(authContext)
+
     const confirmDeleteHandler=()=>{
         
         console.log("deleted")
@@ -44,9 +47,9 @@ const PostItem=(props)=>{
                  </div>
                   {/* modal to open the map */}
                 
-                <NavLink to={`/places/${props.id}`} className="col-md-12 col-lg-3 col-12 btn-custom__1 btn btn-success text-decoration-none">edit</NavLink>
+               {auth.isLogin &&( <NavLink to={`/places/${props.id}`} className="col-md-12 col-lg-3 col-12 btn-custom__1 btn btn-success text-decoration-none">edit</NavLink>)}
                 
-                <button className="col-md-12 col-lg-3 col-12 btn-custom__1 btn btn-success" data-toggle="modal" data-target="#delete">delete</button>
+                {auth.isLogin &&(<button className="col-md-12 col-lg-3 col-12 btn-custom__1 btn btn-success" data-toggle="modal" data-target="#delete">delete</button>)}
                 <div className="modal" id="delete">
                     <div className="container-fluid modal-dialog">
                         <div className='modal-content'>

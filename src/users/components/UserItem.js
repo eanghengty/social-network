@@ -1,6 +1,6 @@
 import React from 'react'
 import './UserItem.css'
-import '../../shared/Profile.css'
+import '../../util/Profile.css'
 import {Link} from 'react-router-dom'
 const UserItem=(props)=>{
     return(

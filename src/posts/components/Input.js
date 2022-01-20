@@ -49,17 +49,17 @@ const Input=(props)=>{
     onBlur={touchHandler} 
     onChange={changeHandler} 
     value={inputState.value} 
-    className="form-control-title form-control form-control-lg"></input> : 
+    className="form-control-title form-control form-control-lg" required></input> : 
     <textArea id={props.id} rows={props.rows || 3} Add Post
     value={inputState.value} 
     onBlur={touchHandler} 
     onChange={changeHandler} 
     placeholder={props.placeholder} 
-    className="form-control-title form-control form-control-lg"></textArea>
+    className="form-control-title form-control form-control-lg" required></textArea>
     
     
     return(
-        <div className="form-group">
+        <div className="form-group mb-2">
             <label htmlFor={props.id}>{props.label}</label>
             {element}
             {!inputState.isValid && inputState.isTouched && <small className="text-danger">{props.errorText}</small>}

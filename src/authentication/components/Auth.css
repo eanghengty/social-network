@@ -1,11 +1,20 @@
 .container-form__main{
         background-color: white;
-        height:30rem;
+        height:23rem;
         width:40rem;
         padding:1rem;
         border-radius: 20px;
         box-shadow: 0 4px 4px rgba(0,0,0,0.25);
        
+}
+.container-form__mainsignup{
+    background-color: white;
+    height:35rem;
+    width:40rem;
+    padding:1rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+   
 }
 .label-username{
     font-size: medium;
@@ -13,14 +22,14 @@
 }
 .btn-sign-up{
     float: right;
-    background-color: #ffcbcb;
+    /* background-color: #ffcbcb; */
     box-shadow: 0 1px 4px rgba(0,0,0,0.25);
-    border:1px solid #ffcbcb;
+    /* border:1px solid #ffcbcb; */
 }
 .btn-sign-in{
-    background-color: #ffcbcb;
+    /* background-color: #ffcbcb; */
     box-shadow: 0 1px 4px rgba(0,0,0,0.25);
-    border:1px solid #ffcbcb;
+    /* border:1px solid #ffcbcb; */
 }
 .container-h2{
    text-align: center;

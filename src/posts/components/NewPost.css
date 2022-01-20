@@ -1,5 +1,14 @@
 .container-main{
     width:60%;
+    height: 35rem;
+    background-color: white;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    padding:1.5rem 1rem;
+    border-radius: 20px;
+}
+.container-main-2{
+    width:60%;
+   
     background-color: white;
     box-shadow: 0 4px 4px rgba(0,0,0,0.25);
     padding:1.5rem 1rem;
@@ -45,5 +54,23 @@
 .btn-back-post{
     margin-right:10px;
     box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+}
+
+@media (min-width:581px){
+    .container-main{
+        width:50%;
+    }
+    .constainer-main-2{
+        width: 50%;
+    }
+}
+
+@media (max-width:580px){
+    .container-main{
+        width: 90%;
+    }
+    .container-main-2{
+        width: 90%;
+    }
 }
 

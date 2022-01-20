@@ -1,8 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './Navbar.css'
-
+import { useContext } from 'react'
+import { authContext } from './context/authContext'
 const Navbar=()=>{
+    const auth = useContext(authContext)
     return(
         <header>
             <div className="background-nav navbar navbar-expand-md navbar-light ">
@@ -13,19 +15,22 @@ const Navbar=()=>{
                     </button>
                     <div className="collapse navbar-collapse" id="child">
                         <ul className="margin-ul navbar-nav">
-                            <li className="nav-item">
+                            {auth.isLogin && (<li className="nav-item">
                                 <NavLink to="/:userId/allpost" exact className="drop-shadow__a nav-link  text-white">Your post</NavLink>
-                            </li>
+                            </li>)}
                             <li className="nav-item">
-                                <NavLink to="/yourpost" className="drop-shadow__a nav-link text-white">All post</NavLink>
+                                <NavLink to="/allpost" className="drop-shadow__a nav-link text-white">All post</NavLink>
                             </li>
                             
-                            <li className="nav-item">
+                            {auth.isLogin && (<li className="nav-item">
                                 <NavLink to="/addpost" className="drop-shadow__a nav-link text-white">Add Post</NavLink>
-                            </li>
-                            <li className="nav-item">
+                            </li>)}
+                            {!auth.isLogin &&(<li className="nav-item">
                                 <NavLink to="/auth" className="drop-shadow__a nav-link text-white">Get In</NavLink>
-                            </li>
+                            </li>)}
+                            {auth.isLogin &&(<li className="nav-item">
+                                <NavLink to="/allpost" className="drop-shadow__a nav-link text-white" onClick={auth.logout}>Get out</NavLink>
+                            </li>)}
                         </ul>
                     </div>
                 </div>

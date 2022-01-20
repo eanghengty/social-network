@@ -3,7 +3,7 @@ import '../components/NewPost.css'
 import Input from '../components/Input'
 import { VALIDATOR_MINLENGTH, VALIDATOR_REQUIRE } from '../../authentication/components/validators'
 
-import { useForm } from '../../shared/hooks/form-hook'
+import { useForm } from '../../util/hooks/formHook'
 const NewPost=()=>{
     //check to make sure the input all valid => add post
 
@@ -38,17 +38,14 @@ const NewPost=()=>{
                 <textArea id="description" className="form-control form-control-description " rows="4"></textArea> 
             </div> */}
             <Input id="description" element="textArea" type="text" label="Description" validators={[VALIDATOR_MINLENGTH(4)]} errorText="please input valid description." onInput={inputHandler}></Input>
-            <div className="form-group mt-3">
-                <label className="d-inline-block" for="image">select image</label>
+            <div className="form-group mt-3 d-block mb-5">
+                <label className="d-inline-block mb-2" for="image">select image</label>
                 <input type="file" className="form-control-file form-control d-inline-block " id="image"></input>
                 
             </div>
-            <div className="form-group-address container d-inline-block mt-3 ">
-                <label className="d-block" for="address">Address</label>
-                <input type="text" className="form-control-address d-block form-control-lg"></input>
-            </div>
-            <div className="form-group__add-post  mt-3 d-inline-block">
-            <label className="label-hidden  d-block">s</label>
+            <Input id="address" element="input" type="text" label="Address" validators={[VALIDATOR_REQUIRE()]} errorText="please enter a valid Address." onInput={inputHandler}></Input>
+            <div className="form-group__add-post  mt-1 d-inline-block">
+            
             <button className="btn-add-post btn btn-success d-block" type="submit" disabled={!formState.isValid}>Add Post</button>
             </div>
         </form>
