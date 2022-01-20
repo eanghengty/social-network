@@ -6,6 +6,7 @@ import NewPost from './posts/pages/NewPost';
 import Navbar from './shared/Navbar';
 import UserPost from './posts/pages/UserPost';
 import Auth from './authentication/components/Auth';
+import UpdatePost from './posts/pages/UpdatePost';
 function App() {
   return (
     
@@ -13,11 +14,12 @@ function App() {
       {/* render only one time when the page start  */}
       <Navbar></Navbar>
       <Switch>
-      <Route path="/" exact>
-          <Users></Users>
+      <Route path="/yourpost" exact>
+      <Users></Users>
       </Route>
       <Route path="/:userId/allpost" exact>
-        <UserPost></UserPost>
+      <UserPost></UserPost>
+        
       </Route>
       <Route path="/addpost" exact>
           <NewPost></NewPost>
@@ -25,7 +27,10 @@ function App() {
       <Route path="/auth" exact>
         <Auth></Auth>
       </Route>
-      <Redirect to="/">
+      <Route path="/places/:postId">
+        <UpdatePost></UpdatePost>
+      </Route>
+      <Redirect to="/allpost">
 
       </Redirect>
       </Switch>

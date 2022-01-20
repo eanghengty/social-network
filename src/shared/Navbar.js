@@ -14,10 +14,10 @@ const Navbar=()=>{
                     <div className="collapse navbar-collapse" id="child">
                         <ul className="margin-ul navbar-nav">
                             <li className="nav-item">
-                                <NavLink to="/:userId/allpost" exact className="drop-shadow__a nav-link  text-white">All Post</NavLink>
+                                <NavLink to="/:userId/allpost" exact className="drop-shadow__a nav-link  text-white">Your post</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/yourpost" className="drop-shadow__a nav-link text-white">Your Post</NavLink>
+                                <NavLink to="/yourpost" className="drop-shadow__a nav-link text-white">All post</NavLink>
                             </li>
                             
                             <li className="nav-item">

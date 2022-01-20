@@ -1,6 +1,11 @@
 import React from 'react'
 import './Auth.css'
 const Auth=()=>{
+
+    const switchModeHandler=()=>{
+        
+    }
+
     return(
         <div className="row">
             
