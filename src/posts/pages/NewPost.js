@@ -2,62 +2,29 @@ import React from 'react'
 import '../components/NewPost.css'
 import Input from '../components/Input'
 import { VALIDATOR_MINLENGTH, VALIDATOR_REQUIRE } from '../../authentication/components/validators'
-import { useCallback } from 'react'
-import { useReducer } from 'react'
 
+import { useForm } from '../../shared/hooks/form-hook'
 const NewPost=()=>{
     //check to make sure the input all valid => add post
-    const formReducer=(state,action)=>{
-        switch(action.type){
-            case 'INPUT_CHANGE':
-                let formIsValid = true
-                for(const inputId in state.inputs){
-                    if(inputId === action.inputId){
-                        formIsValid = formIsValid && action.isValid
-                    }else{
-                        formIsValid=formIsValid && state.inputs[inputId].isValid
-                    }
-                }
-                return {
-                    ...state,
-                    inputs:{
-                        ...state.inputs,
-                        [action.inputId]:{value: action.value,isValid:action.isValid},
-                        
-                    },
-                    isValid:formIsValid
-                }
 
-        default:
-            return state
-            
-                
-            
-        }
-        }
 
     //initial state
-    const [formState,dispatch] = useReducer(formReducer,{
-            inputs:{
-                title:{
-                        value:'',
-                        isValid:false
-                },
-                description:{
-                    value:'',
-                    isValid:false
-                }
-            },
+  
+    const [formState, inputHandler]=useForm({
+        title:{
+            value:'',
             isValid:false
+        },
+        description:{
+            value:'',
+            isValid:false
+        },
+        address:{
+            value:'',
+            isValid:false
+        }
 
-            
-        })
-    
-
-    const inputHandler=useCallback((id,value,isValid)=>{
-        dispatch({type:'INPUT_CHANGE' ,value:value , isValid:isValid , inputId:id})
-    },[])
-    
+    } , false)
 
     return(
         <form className="container-main container mt-4 " onSubmit={(event)=>event.preventDefault()}>
