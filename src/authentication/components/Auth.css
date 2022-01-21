@@ -47,6 +47,9 @@
     .container-form__main{
        width:85%;
     }
+    .container-form__mainsignup{
+        width:85%;
+    }
 }
 .form-color{
     background-color: #e7e7e7;

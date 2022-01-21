@@ -43,3 +43,18 @@
 .nham{
     animation: second-blinking 2s infinite;
 }
+.fa-custom{
+    color: #cdb5e1;
+    
+}
+.nav-item:hover{
+    border-bottom: 2px solid white;
+    background-color: pink;
+    border-radius: 10px;
+    
+}
+@media (max-width:740px) {
+    .nav-item{
+        padding-left:10px ;
+    }
+}
